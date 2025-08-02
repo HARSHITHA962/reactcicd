@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+import viteLogo from '/vite.svg'  // <-- Add this import
 import './App.css'
 
 function App() {
@@ -10,10 +9,10 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={reactLogo} className="logo" alt="Vite logo" />
+        <a href="https://vite.dev" target="_blank" rel="noreferrer">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -23,7 +22,7 @@ function App() {
           count is {count}
         </button>
         <p>
-          <code>THIS IS GIT ACTION EXPERIMENT</code> 
+          Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
